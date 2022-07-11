@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #292c34;
+  color: #fff;
+  font-family: "Asap", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header {
+  background: white;
+  padding: 1.25rem;
+}
+
+header > h1 {
+  color: #292c34;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.score-board {
+  position: relative;
+  padding: 1rem 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12.5rem;
+  height: 7.8125rem;
+
+  margin: 1.25rem auto;
+  font-size: 2.75rem;
+
+  border: 0.25rem solid #fff;
+  border-radius: 0.5rem;
+}
+
+.badge {
+  font-size: 1rem;
+  background: #e2584d;
+  padding: 0.125rem 0.625rem;
+}
+
+#user-label,
+#computer-label {
+  position: absolute;
+  top: 50%;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+#user-label {
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+#computer-label {
+  transform: translate(50%, -50%);
+  right: 0;
+}
+
+.result {
+  text-align: center;
+}
+.result > p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.choice {
+  border: 0.25rem solid #fff;
+  border-radius: 50%;
+  padding: 0.625rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.choice:hover {
+  background: #24272e;
+}
+
+#action-message {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.green-glow {
+  border: 0.25rem solid #4dcc7d;
+  box-shadow: 0 0 0.625rem #31b43a;
+}
+.red-glow {
+  border: 0.25rem solid #fc121b;
+  box-shadow: 0 0 0.625rem #d01115;
+}
+.gray-glow {
+  border: 0.25rem solid #464647;
+  box-shadow: 0 0 0.625rem #25292b;
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+}
