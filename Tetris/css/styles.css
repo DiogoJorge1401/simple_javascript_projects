@@ -1,0 +1,50 @@
+:root {
+  font-size: 0.625em;
+}
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background: yellow;
+  height: 2rem;
+  width: 2rem;
+}
+
+.game {
+  height: 0;
+  width: 300px;
+}
+
+.grid {
+  height: 40rem;
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.previous-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 8rem;
+  height: 8rem;
+}
+
+.previous-shape {
+  width: 10rem;
+  height: 8rem;
+  padding-left: 2rem;
+}
+
+.block {
+  background: blue;
+}
+
+.block2 {
+  background: purple;
+}
+
+.block3 {
+  background: green;
+}
